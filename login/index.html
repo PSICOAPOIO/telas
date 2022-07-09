@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+
+    
+    <div class="container">
+
+        <div id="firstContent" class ="content firstContent">
+            <div  id="login">
+                
+                <div  class="bemVindo">
+                    <h1>BEM-VINDO(A) ao PsicoApoio!</h1>
+                    <p>Aqui você encontrará dicas e informações</p>
+                    <p>para o combate a problemas e transtornos </p> 
+                    <p>psicológicos.</p>
+                </div><!--Texto-->
+                
+                <div class="defineLoginOuCadastro">
+                    <div id="opcLogin">
+                        <a href="#" class="ativo" id="loginFormLink">LOGIN</a>
+                    </div>
+
+                    <div class="opcCadastro">
+                        <a href="#" class="inativo" id="cadastroFormLink">CADASTRO</a>
+                    </div>
+                </div>
+        
+                <form class="form" id="loginForm">
+                    <input class="inputLogin" type="email" name="email" placeholder="E-mail" required="required"/>
+                    <input class="inputLogin" type="password" name="senha" placeholder="Senha" required="required"/>
+                    <a href="esqueciSenha">Esqueci minha senha :/</a>
+                    <div class="divBtn">
+                        <input class="btn" id="btn" type="submit" name="entrar" value="ENTRAR"/>
+                    </div>
+                    
+                    
+                </form>
+            </div><!--login-->
+        </div>
+
+        <div id="secondContent" class="content secondContent">
+            <div id="cadastro">
+                <div  class="bemVindo">
+                    <h1>BEM-VINDO(A) ao PsicoApoio!</h1>
+                    <p>Aqui você encontrará dicas e informações</p>
+                    <p>para o combate a problemas e transtornos </p> 
+                    <p>psicológicos.</p>
+                </div><!--Texto-->
+                
+                <div class="defineLoginOuCadastro">
+                    <div id="opcLogin">
+                        <a href="#" class="inativo" id="loginFormLink">LOGIN</a>
+                    </div>
+                    <div class="opcCadastro">
+                        <a href="#" class="ativo" id="cadastroFormLink">CADASTRO</a>
+                    </div>
+                </div>
+                <form class="form" id="cadastroForm">
+                    <input type="text" name="nomeCompleto" placeholder="Nome completo" required="required"/>
+                    <input type="text" name="nomeUsuario" placeholder="Nome de usuário" required="required"/>
+                    <input type="email" name="email" placeholder="E-mail" required="required"/>
+                    <input type="password" name="senha" placeholder="Senha" required="required"/>
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                    <a href="definirFoto">Definir foto de perfil</a>
+
+                    <div class="divBtn">
+                        <input class="btn" id="btn" type="submit" name="cadastro" value="CADASTRE-SE"/>
+                    </div>
+                    
+                </form>
+            </div><!--cadastro-->
+        </div>
+    
+        <div>
+            <img src="./imagens/logo.png" id="logo"/>
+        </div><!--logo-->
+
+        
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
